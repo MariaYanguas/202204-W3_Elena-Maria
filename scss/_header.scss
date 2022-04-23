@@ -1,0 +1,21 @@
+.header {
+  background-color: $primary_color;
+}
+
+.container__img {
+  height: 100%;
+  width: 140px;
+  padding-top: 20px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.nav__link {
+  font-family: $font_oswald;
+  color: $dark_color;
+  text-decoration: none;
+}

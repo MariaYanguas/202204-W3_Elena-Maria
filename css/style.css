@@ -1,3 +1,24 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&family=Open+Sans&family=Oswald&display=swap");
+.header {
+  background-color: #13FFBD;
+}
 
+.container__img {
+  height: 100%;
+  width: 140px;
+  padding-top: 20px;
+}
+
+.nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.nav__link {
+  font-family: "Oswald";
+  color: #080D14;
+  text-decoration: none;
+}
 
 /*# sourceMappingURL=style.css.map */
