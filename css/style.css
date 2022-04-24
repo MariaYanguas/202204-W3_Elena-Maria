@@ -1,24 +1,74 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&family=Open+Sans&family=Oswald&display=swap");
+body {
+  margin: 0;
+}
+
 .header {
   background-color: #13FFBD;
 }
-
-.container__img {
-  height: 100%;
-  width: 140px;
-  padding-top: 20px;
-}
-
-.nav {
+.header .nav {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  justify-content: space-between;
+  padding: 0.75rem;
 }
-
-.nav__link {
+.header .nav .nav__list {
+  list-style: none;
+  display: flex;
+  align-items: start;
+  width: 100%;
+  justify-content: space-between;
+  margin: 0;
+  padding: 0;
+}
+.header .nav .nav__list .nav__logo {
+  width: 56%;
+  max-width: 7.81rem;
+  display: flex;
+  margin: auto;
+}
+.header .nav .nav__link {
   font-family: "Oswald";
+  font-size: 12px;
   color: #080D14;
   text-decoration: none;
+  /* padding-right: 1rem;
+  padding-top: 0.6rem; */
+}
+.header .nav .nav__menu__icon {
+  color: #080D14;
+}
+.header .nav .nav__menu__icon:hover {
+  color: #FF8DAC;
+}
+.header .nav .nav__link--hiden {
+  display: none;
+}
+
+@media screen and (min-width: 600px) {
+  .header .nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem;
+  }
+  .header .nav .nav__link {
+    color: #080D14;
+    font-size: 0.5rem;
+  }
+  .header .nav .nav__link:hover {
+    color: #FF8DAC;
+  }
+  .header .nav .nav__link--hiden {
+    display: inline-block;
+  }
+  .header .nav .nav__list {
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .header .nav .nav__menu__list {
+    order: 5;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
