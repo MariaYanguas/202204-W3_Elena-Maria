@@ -1,7 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&family=Open+Sans&family=Oswald&display=swap");
-body {
-  margin: 0;
-}
 
 .header {
   background-color: #13FFBD;
@@ -42,6 +39,78 @@ body {
   display: none;
 }
 
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #080D14;
+  color: #13FFBD;
+  text-align: center;
+  padding: 5rem;
+}
+.footer__section {
+  margin-bottom: 5rem;
+}
+.footer__section:last-of-type {
+  margin-bottom: 0;
+}
+.footer__header {
+  color: #13FFBD;
+  font-size: 24px;
+  letter-spacing: 2px;
+}
+.footer__header--line {
+  text-decoration: line-through;
+  color: #FF8DAC;
+}
+.footer__header--icon {
+  margin: 3rem auto;
+}
+.footer__nav--item {
+  color: white;
+  font-size: 22px;
+  text-decoration: none;
+}
+.footer__nav--line {
+  text-decoration: line-through;
+}
+.footer__rrss-wrapper {
+  display: flex;
+}
+.footer__rrss {
+  width: 50px;
+  margin-right: 16px;
+  cursor: pointer;
+}
+.footer__rrss:last-of-type, .footer__rrss:nth-of-type(5) {
+  margin-right: 0;
+}
+.footer__rrss--hidden {
+  display: none;
+}
+.footer__links-wrapper {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 2rem;
+}
+.footer__links-wrapper:last-of-type {
+  margin-bottom: 0;
+}
+.footer__title {
+  color: white;
+  font-size: 20px;
+  margin-bottom: 1rem;
+  letter-spacing: 2px;
+}
+.footer__link {
+  color: #13FFBD;
+  text-decoration: none;
+}
+.footer__link:hover {
+  color: #FF8DAC;
+}
+
 @media screen and (min-width: 600px) {
   .header .nav {
     display: flex;
@@ -66,6 +135,30 @@ body {
   }
   .header .nav .nav__menu__icon {
     display: none;
+  }
+  
+   .footer__nav {
+    display: none;
+  }
+  .footer__body {
+    display: flex;
+    width: 80%;
+    justify-content: space-between;
+  }
+  .footer__section--align-right {
+    text-align: right;
+  }
+  .footer__section--align-left {
+    text-align: left;
+  }
+  .footer__rrss {
+    margin-top: 1rem;
+  }
+  .footer__rrss:hover {
+    display: none;
+  }
+  .footer__rrss:hover + img {
+    display: inline;
   }
 }
 
