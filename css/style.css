@@ -31,8 +31,6 @@ body {
   font-size: 12px;
   color: #080D14;
   text-decoration: none;
-  /* padding-right: 1rem;
-  padding-top: 0.6rem; */
 }
 .header .nav .nav__menu__icon {
   color: #080D14;
@@ -66,8 +64,8 @@ body {
     justify-content: center;
     gap: 1rem;
   }
-  .header .nav .nav__menu__list {
-    order: 5;
+  .header .nav .nav__menu__icon {
+    display: none;
   }
 }
 
