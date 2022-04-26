@@ -1,4 +1,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Nunito:wght@400;800&family=Open+Sans&family=Oswald&display=swap");
+body {
+  margin: 0;
+}
 
 .header {
   background-color: #13FFBD;
@@ -39,6 +42,32 @@
   display: none;
 }
 
+@media screen and (min-width: 600px) {
+  .header .nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.75rem;
+  }
+  .header .nav .nav__link {
+    color: #080D14;
+    font-size: 0.9rem;
+  }
+  .header .nav .nav__link:hover {
+    color: #FF8DAC;
+  }
+  .header .nav .nav__link--hiden {
+    display: inline-block;
+  }
+  .header .nav .nav__list {
+    align-items: center;
+    flex-direction: row-reverse;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .header .nav .nav__menu__icon {
+    display: none;
+  }
+}
 .footer {
   display: flex;
   flex-direction: column;
@@ -60,19 +89,19 @@
   font-size: 24px;
   letter-spacing: 2px;
 }
-.footer__header--line {
+.footer__header-line {
   text-decoration: line-through;
   color: #FF8DAC;
 }
-.footer__header--icon {
+.footer__header-icon {
   margin: 3rem auto;
 }
-.footer__nav--item {
+.footer__nav-item {
   color: white;
   font-size: 22px;
   text-decoration: none;
 }
-.footer__nav--line {
+.footer__nav-line {
   text-decoration: line-through;
 }
 .footer__rrss-wrapper {
@@ -112,32 +141,7 @@
 }
 
 @media screen and (min-width: 600px) {
-  .header .nav {
-    display: flex;
-    justify-content: space-between;
-    padding: 0.75rem;
-  }
-  .header .nav .nav__link {
-    color: #080D14;
-    font-size: 0.5rem;
-  }
-  .header .nav .nav__link:hover {
-    color: #FF8DAC;
-  }
-  .header .nav .nav__link--hiden {
-    display: inline-block;
-  }
-  .header .nav .nav__list {
-    align-items: center;
-    flex-direction: row-reverse;
-    justify-content: center;
-    gap: 1rem;
-  }
-  .header .nav .nav__menu__icon {
-    display: none;
-  }
-  
-   .footer__nav {
+  .footer__nav {
     display: none;
   }
   .footer__body {
@@ -160,6 +164,10 @@
   .footer__rrss:hover + img {
     display: inline;
   }
+}
+body {
+  font-size: 16px;
+  font-family: "Open Sans";
 }
 
 /*# sourceMappingURL=style.css.map */
