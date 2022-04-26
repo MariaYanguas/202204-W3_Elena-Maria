@@ -4,7 +4,8 @@ body {
 }
 
 .header {
-  background-color: #13ffbd;
+  background-color: #13FFBD;
+  height: 28rem;
 }
 .header .nav {
   display: flex;
@@ -29,14 +30,14 @@ body {
 .header .nav .nav__link {
   font-family: "Oswald";
   font-size: 12px;
-  color: #080d14;
+  color: #080D14;
   text-decoration: none;
 }
 .header .nav .nav__menu__icon {
-  color: #080d14;
+  color: #080D14;
 }
 .header .nav .nav__menu__icon:hover {
-  color: #ff8dac;
+  color: #FF8DAC;
 }
 .header .nav .nav__link--hiden {
   display: none;
@@ -49,11 +50,11 @@ body {
     padding: 0.75rem;
   }
   .header .nav .nav__link {
-    color: #080d14;
+    color: #080D14;
     font-size: 0.9rem;
   }
   .header .nav .nav__link:hover {
-    color: #ff8dac;
+    color: #FF8DAC;
   }
   .header .nav .nav__link--hiden {
     display: inline-block;
@@ -73,8 +74,8 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #080d14;
-  color: #13ffbd;
+  background-color: #080D14;
+  color: #13FFBD;
   text-align: center;
   padding: 5rem;
 }
@@ -85,13 +86,13 @@ body {
   margin-bottom: 0;
 }
 .footer__header {
-  color: #13ffbd;
+  color: #13FFBD;
   font-size: 24px;
   letter-spacing: 2px;
 }
 .footer__header-line {
   text-decoration: line-through;
-  color: #ff8dac;
+  color: #FF8DAC;
 }
 .footer__header-icon {
   margin: 3rem auto;
@@ -112,8 +113,7 @@ body {
   margin-right: 16px;
   cursor: pointer;
 }
-.footer__rrss:last-of-type,
-.footer__rrss:nth-of-type(5) {
+.footer__rrss:last-of-type, .footer__rrss:nth-of-type(5) {
   margin-right: 0;
 }
 .footer__rrss--hidden {
@@ -134,11 +134,11 @@ body {
   letter-spacing: 2px;
 }
 .footer__link {
-  color: #13ffbd;
+  color: #13FFBD;
   text-decoration: none;
 }
 .footer__link:hover {
-  color: #ff8dac;
+  color: #FF8DAC;
 }
 
 @media screen and (min-width: 600px) {
@@ -166,9 +166,19 @@ body {
     display: inline;
   }
 }
-body {
-  font-size: 16px;
-  font-family: "Open Sans";
+@media screen and (min-width: 600px) {
+  body {
+    font-size: 16px;
+    font-family: "Open Sans";
+  }
+
+  .main {
+    display: grid;
+    grid-template-columns: auto auto auto;
+  }
+  .main .container_img {
+    height: 100%;
+  }
 }
 
 /*# sourceMappingURL=works.css.map */
