@@ -21,24 +21,24 @@
     font-size: 24px;
     letter-spacing: 2px;
 
-    &--line {
+    &-line {
       text-decoration: line-through;
       color: $hover_color;
     }
 
-    &--icon {
+    &-icon {
       margin: 3rem auto;
     }
   }
 
   &__nav {
-    &--item {
+    &-item {
       color: white;
       font-size: 22px;
       text-decoration: none;
     }
 
-    &--line {
+    &-line {
       text-decoration: line-through;
     }
   }
@@ -90,7 +90,6 @@
 }
 
 @media screen and (min-width: 600px) {
-
   .footer {
     &__nav {
       display: none;
@@ -119,7 +118,7 @@
         display: none;
       }
 
-      &:hover+img {
+      &:hover + img {
         display: inline;
       }
     }
